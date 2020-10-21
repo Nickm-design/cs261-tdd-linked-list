@@ -10,6 +10,6 @@
 class LinkedList:
 
     def __init__(self, value=None):
-        self.previous = self
+        self.prev = self
         self.value = value
         self.next = self
