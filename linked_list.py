@@ -9,4 +9,7 @@
 
 class LinkedList:
 
-    pass
+    def __init__(self):
+        self.previous = self
+        self.value = None
+        self.next = self

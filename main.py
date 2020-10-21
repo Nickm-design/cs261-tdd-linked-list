@@ -5,7 +5,6 @@
 from linked_list import LinkedList
 
 
-# Example
-    
+
 ages = LinkedList()
 print(ages)
