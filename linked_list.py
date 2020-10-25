@@ -13,3 +13,7 @@ class LinkedList:
         self.prev = self
         self.value = value
         self.next = self
+
+    def is_sentinel(self):
+        if self.value == None:
+            return True
