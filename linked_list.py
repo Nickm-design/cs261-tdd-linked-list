@@ -23,4 +23,7 @@ class LinkedList:
     def is_empty(self):
         if self.prev != self or self.next != self:
             return False
-        return self.next
+        return self.is_last()
+    
+    def is_last(self):
+        return self.is_sentinel()
