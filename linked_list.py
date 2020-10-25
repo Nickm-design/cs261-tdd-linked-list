@@ -21,4 +21,6 @@ class LinkedList:
             return False
     
     def is_empty(self):
+        if self.prev != self or self.next != self:
+            return False
         return self.next
