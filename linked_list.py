@@ -32,4 +32,6 @@ class LinkedList:
         return self
 
     def append(self, value):
+        if self.is_empty():
+            self.prev = value
         self.next = value
