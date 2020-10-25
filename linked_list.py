@@ -19,3 +19,6 @@ class LinkedList:
             return True
         else:
             return False
+    
+    def is_empty(self):
+        return self.next
