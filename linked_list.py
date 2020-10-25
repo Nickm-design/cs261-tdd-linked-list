@@ -5,7 +5,7 @@
 # If you can't figure it out recursively, use a loop. (But then refactor
 # your implementation into a recursive one!)
 # Your implementation should pass the tests in test_sorted_list.py.
-# YOUR NAME
+# Nick Morris
 
 class LinkedList:
 
@@ -17,8 +17,7 @@ class LinkedList:
     def is_sentinel(self):
         if self.value == None:
             return True
-        else:
-            return False
+        return False
     
     def is_empty(self):
         if self.prev != self or self.next != self:
@@ -26,7 +25,9 @@ class LinkedList:
         return self.is_last()
     
     def is_last(self):
-        return self.is_sentinel()
+        if self.next == self:
+            return self.is_sentinel()
+        return self.value
 
     def last(self):
         return self
