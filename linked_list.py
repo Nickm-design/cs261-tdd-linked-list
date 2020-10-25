@@ -17,3 +17,5 @@ class LinkedList:
     def is_sentinel(self):
         if self.value == None:
             return True
+        else:
+            return False
