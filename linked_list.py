@@ -30,7 +30,7 @@ class LinkedList:
         return self.value
 
     def last(self):
-        return self
+        return self.prev
 
     def append(self, node):
         last = self.prev
