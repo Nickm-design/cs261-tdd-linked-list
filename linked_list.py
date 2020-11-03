@@ -15,19 +15,13 @@ class LinkedList:
         self.prev = self
         
     def is_sentinel(self):
-        if self.value == None:
-            return True
-        return False
+        return self.value == None
     
     def is_empty(self):
-        if self.prev != self or self.next != self:
-            return False
-        return self.is_last()
+        return self.prev == self and self.next == self
     
     def is_last(self):
-        if self.next == self:
-            return self.is_sentinel()
-        return self.value
+        return self.next.is_sentinel()
 
     def last(self):
         return self.prev
@@ -38,3 +32,12 @@ class LinkedList:
         node.prev = last
         node.next = self
         self.prev = node
+
+    def delete(self):
+        left = self.prev
+        right = self.next
+        left.next = right
+        right.prev = left
+        
+    def insert(self, node):
+        pass
